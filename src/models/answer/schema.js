@@ -11,15 +11,15 @@ const schema = new Schema({
     type: String,
     required: [true]
   },
-  tags: {
-    type: [String]
+  questionId: {
+    type: ObjectId
   },
   createdAt: {
     type: Date,
     default: new Date(),
     required: [true]
   },
-  createdBy: {
+  createBy: {
     type: ObjectId
   }
 });

@@ -1,4 +1,17 @@
 const { errorHandler } = require('./error-handller');
-const { sendOne } = require('./requests-helpers');
+const {
+  sendOne,
+  sendList,
+  sendCreated,
+  sendUpdated,
+  sendDeleted
+} = require('./requests-helpers');
 
-module.exports = { errorHandler, sendOne };
+module.exports = {
+  errorHandler,
+  sendOne,
+  sendList,
+  sendCreated,
+  sendUpdated,
+  sendDeleted
+};
